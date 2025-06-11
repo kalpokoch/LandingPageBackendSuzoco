@@ -4,7 +4,9 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://suzocoservices.in/"
+}));
 app.use(express.json());
 
 app.post('/api/contact', async (req, res) => {
