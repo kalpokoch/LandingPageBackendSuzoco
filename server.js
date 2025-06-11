@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: "https://suzocoservices.in/",
+  origin: "https://suzocoservices.in",
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
 }));
